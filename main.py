@@ -1,2 +1,5 @@
-#Futuras alterações serão feitas
-print("Olá")
+# Futuras alterações serão 
+import functions
+
+# Chamando a função adicionarEstoque do arquivo functions.py
+functions.adicionarEstoque()
