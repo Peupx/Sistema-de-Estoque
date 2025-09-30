@@ -17,5 +17,3 @@ def adicionarEstoque():
             
         elif continuar == 'S':
             continuar = 1
-    
-    
