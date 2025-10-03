@@ -1,23 +1,29 @@
-def adicionarEstoque():
-    continuar = 1 # Variável condicional do looping
-    produtos = {} # Dicionário vazio... até então
-    
-    while continuar == 1:
-        nome = input("Coloque o nome do produto: ").capitalize()
-        # Pega o input se já não esiver no dicionário
-        if nome in produtos:
-            print("Inválido! Nome já consta na lista")
+# Biblioteca tabulate para fazer as tabelas
+from tabulate import tabulate
+def AdicionarEstoque():
+    produtos = [
+        ["Código do produto", "Produto", "Unidade"]
+    ]
+
+    while True:
+    # Inputs da lista
+        Codigo = input("Código do produto: ")
+        Produto = input("Nome do Produto: ").capitalize()
+        Unidade = input("Unidade do produto Kg, L...: ")
+
+        # Lista de variaveis a serem adicionados
+        novoProduto = [Codigo, Produto, Unidade]
+
+        # Adiciona a lista de produtos salvos anteriormente na lista de produtos com append
+        produtos.append(novoProduto)
+
+            # Headers="firstrow" define o headers como a primeira coluna, pegando como template a lista produtos
+            # Tablefmt="fancy_grid" define o estilo da tabela como fancy
+        print(tabulate(produtos, headers="firstrow", tablefmt="fancy_grid"))
+
+        continuar = input("Deseja adicionar outro item (S/N)? ").upper()
+
+        if continuar == "N":
+            break
         else:
-            quantidade = input("Coloque a quantidade desse produto: ")
-            produtos[nome] = quantidade
-            
-            
-        print(produtos)
-        
-        continuar = input("Deseja continuar? (S/N)").upper()
-        # Alteração da condicional de lopping de acordo com o input anterior
-        if continuar == 'N': 
-            continuar = 0
-            
-        elif continuar == 'S':
-            continuar = 1
+            continue
