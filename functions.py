@@ -1,31 +1,38 @@
-# Biblioteca tabulate para fazer as tabelas
-from tabulate import tabulate
-def AdicionarEstoque():
-    produtos = [
-        ["Código do produto", "Produto","Categoria", "Unidade"]
-    ]
-
-    while True:
-    # Inputs da lista
-        Codigo = input("Código do produto: ").upper()
-        Produto = input("Nome do Produto: ").capitalize()
-        Categoria = input("Categoria do produto: ").upper()
-        Unidade = input("Unidade do produto Kg, L...: ").upper()
+import pandas as pd # Biblioteca pandas para utilizar excel
         
+def AdicionarEstoque():
+    # Ler o arquivo específico para carregar os dados
+    dfExistente = pd.read_excel('produtosCadastrados.xlsx')
+    
+    # Loop principal para adicionar produtos
+    while True:
+        
+        # Input feito pelo usuário da descrição dos produtos
+        Codigo = input("Digite o código do produto: ")
+        Produto = input("Digite o nome do produto: ")
+        Categoria = input("Digite a categoria do produto: ")
+        Unidade = input("Digite a unidade do produto Ex: Kg, L... : ")
 
-        # Lista de variaveis a serem adicionados
-        novoProduto = [Codigo, Produto, Categoria, Unidade]
+        novosProdutos = {
+            'Código': [Codigo],
+            'Produto': [Produto],
+            'Categoria': [Categoria],
+            'Unidade': [Unidade]
+        }
+        # Salva os produtos em um DataFrame novo pegando os novosProdutos como input
+        # Além de concatenar eles junto com o DataFrame já existente
+        dfNovo = pd.DataFrame(novosProdutos)
+        dfExistente = pd.concat([dfExistente, dfNovo], ignore_index=True)
 
-        # Adiciona a lista de produtos salvos anteriormente na lista de produtos com append
-        produtos.append(novoProduto)
+        # Aqui o código tenta salvar as alterações, avisando se ocorreu um erro ou deu tudo certo
+        try:
+            dfExistente.to_excel('produtosCadastrados.xlsx', index=False)
+            print("Produto adicionado e arquivo salvo com sucesso!")
+        except:
+            print("Ocorreu um erro ao salvar no Excel")
+            break 
 
-            # Headers="firstrow" define o headers como a primeira coluna, pegando como template a lista produtos
-            # Tablefmt="fancy_grid" define o estilo da tabela como fancy
-        print(tabulate(produtos, headers="firstrow", tablefmt="fancy_grid"))
-
-        continuar = input("Deseja adicionar outro item (S/N)? ").upper()
-
-        if continuar == "N":
+        # Lugar de quit do programa
+        continuar = input("\nContinuar adicionando produtos (S/N)? ").upper()
+        if continuar == 'N':
             break
-        else:
-            continue
