@@ -2,17 +2,19 @@
 from tabulate import tabulate
 def AdicionarEstoque():
     produtos = [
-        ["Código do produto", "Produto", "Unidade"]
+        ["Código do produto", "Produto","Categoria", "Unidade"]
     ]
 
     while True:
     # Inputs da lista
-        Codigo = input("Código do produto: ")
+        Codigo = input("Código do produto: ").upper()
         Produto = input("Nome do Produto: ").capitalize()
-        Unidade = input("Unidade do produto Kg, L...: ")
+        Categoria = input("Categoria do produto: ").upper()
+        Unidade = input("Unidade do produto Kg, L...: ").upper()
+        
 
         # Lista de variaveis a serem adicionados
-        novoProduto = [Codigo, Produto, Unidade]
+        novoProduto = [Codigo, Produto, Categoria, Unidade]
 
         # Adiciona a lista de produtos salvos anteriormente na lista de produtos com append
         produtos.append(novoProduto)
