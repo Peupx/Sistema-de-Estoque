@@ -2,23 +2,19 @@
 
 Este é um projeto simples de gerenciamento de estoque, construído em Python, que utiliza a biblioteca **Pandas** para armazenar e manipular dados em um arquivo Excel (`produtosCadastrados.xlsx`) e a biblioteca **Matplotlib** para visualização gráfica do estoque.
 
-# 🎓 Realização do Projeto do Projeto 📊
-
----
-
 ## ✍️ Desenvolvedor(es)
 
-* **Nome:** [Pedro Henrique Gonçalves Saraiva]
-* **Nome:** [Rafael Vieira Klos ]
-* **Nome:** [Samara Nascimento Santos]
-* **Nome:** [Samuel Wirley Andrade Cruz]
+* Pedro Henrique Gonçalves Saraiva
+* Rafael Vieira Klos 
+* Samara Nascimento Santos
+* Samuel Wirley Andrade Cruz
   
 ## 🏫 Contexto Acadêmico
 
-* **Disciplina:** [Técnicas de Desenvolvimento de Algoritmos]
-* **Instituição/Curso:** [UDF Centro Universitário/Curso de Análise e Desenvolvimento de Sistemas]
-* **Professor(a) Orientador(a):** [Karla Roberto Sartin]
-* **Período/Ano:** [2º Período - 2025/2)]
+* **Disciplina:** Técnicas de Desenvolvimento de Algoritmos
+* **Instituição/Curso:** UDF Centro Universitário / Curso de Análise e Desenvolvimento de Sistemas
+* **Professor(a) Orientador(a):** Karla Roberto Sartin
+* **Período/Ano:** 2º Período - 2025/2
 
 ## 🎯 Objetivo do Projeto
 
