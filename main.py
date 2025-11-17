@@ -1,5 +1,4 @@
 import function
-
 while True:
         print("\n" + function.TITULO + "=" * 30)
         print(" Sistema de Gerenciamento de Estoque")
