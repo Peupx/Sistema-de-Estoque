@@ -9,16 +9,9 @@ Este é um projeto simples de gerenciamento de estoque, construído em Python, q
 ## ✍️ Desenvolvedor(es)
 
 * **Nome:** [Pedro Henrique Gonçalves Saraiva]
-* **GitHub:** [Peupx]
-
 * **Nome:** [Rafael Vieira Klos ]
-* **GitHub:** [Rafael84-del]
-
 * **Nome:** [Samara Nascimento Santos]
-* **GitHub:** [mara268]
-
 * **Nome:** [Samuel Wirley Andrade Cruz]
-* **GitHub:** [SamuelWirley]
   
 ## 🏫 Contexto Acadêmico
 
