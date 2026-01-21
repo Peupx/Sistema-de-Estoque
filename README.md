@@ -1,22 +1,22 @@
-# 📦 Sistema de Gerenciamento de Estoque em Python
+#  Sistema de Gerenciamento de Estoque em Python
 
 Este é um projeto simples de gerenciamento de estoque, construído em Python, que utiliza a biblioteca **Pandas** para armazenar e manipular dados em um arquivo Excel (`produtosCadastrados.xlsx`) e a biblioteca **Matplotlib** para visualização gráfica do estoque.
 
-## ✍️ Desenvolvedores
+##  Desenvolvedores
 
 * Pedro Henrique Gonçalves Saraiva
 * Rafael Vieira Klos 
 * Samara Nascimento Santos
 * Samuel Wirley Andrade Cruz
   
-## 🏫 Contexto Acadêmico
+##  Contexto Acadêmico
 
 * **Disciplina:** Técnicas de Desenvolvimento de Algoritmos
 * **Instituição/Curso:** UDF Centro Universitário / Curso de Análise e Desenvolvimento de Sistemas
 * **Professor(a) Orientador(a):** Karla Roberto Sartin
 * **Período/Ano:** 2º Período - 2025/2
 
-## 🎯 Objetivo do Projeto
+##  Objetivo do Projeto
 
 O objetivo principal deste projeto foi aplicar e consolidar conhecimentos técnicos em **Python** para a manipulação e visualização de dados, especificamente:
 
@@ -26,7 +26,7 @@ O objetivo principal deste projeto foi aplicar e consolidar conhecimentos técni
 
 
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 O sistema é operado via linha de comando e oferece as seguintes funcionalidades principais:
 
@@ -37,7 +37,7 @@ O sistema é operado via linha de comando e oferece as seguintes funcionalidades
 
 ---
 
-## ⚙️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 | Tecnologia | Descrição |
 | :--- | :--- |
@@ -48,7 +48,7 @@ O sistema é operado via linha de comando e oferece as seguintes funcionalidades
 
 ---
 
-## 🚀 Como Executar o Projeto
+##  Como Executar o Projeto
 
 Siga os passos abaixo para preparar e rodar o sistema na sua máquina.
 
